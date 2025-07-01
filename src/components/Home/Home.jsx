@@ -50,6 +50,32 @@ function Home() {
                     <button type="button" class="w-3 h-3 rounded-full cursor-pointer" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
                 </div>
             </div>
+
+            <div className='grid grid-cols-2 overflow-hidden'>
+                <div className='bg-cover bg-[50%] z-10 bg-no-repeat transform duration-700 ease-in-out hover:scale-[1.09] h-auto w-auto bg-[url(https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/h1_bn-1.jpg)]'  style={{padding : "60px 30px"}}>
+                    <div style={{height : '450px' , width : '450px'}}>
+                        <p>OUR EARRINGS</p>
+                        <p className='text-3xl font-semibold w-50'>Add These To Your style Roster.</p>
+                        <p className='opacity-60 mt-3 w-[50%]'>Grab the deal right now! you can get extra 15% off this season.</p>
+                        <button className='font-semibold mt-3 bg-white px-3 py-2 rounded-lg cursor-pointer transform duration-500 hover:bg-[#dbaf36]'>Shop Now</button>
+                    </div>
+                </div>
+
+                <div className='bg-cover bg-[50%] z-10 bg-no-repeat transform duration-700 ease-in-out hover:scale-[1.09] h-auto w-auto bg-[url(https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/h1_bn-2.jpg)]' style={{padding : "60px 30px"}}>
+                    <div style={{height : '450px' , width : '450px'}}>
+                        <p>FAVORITE ITEMS</p>
+                        <p className='text-3xl font-semibold w-50'>Unique Engagement Rings</p>
+                        <p className='opacity-60 mt-3 w-[45%]'>From special antique diamonds to
+                            one of-a-kind colored gemstones</p>
+                        <button className='font-semibold mt-3 bg-white px-3 py-2 rounded-lg cursor-pointer transform duration-500 hover:bg-[#dbaf36]'>Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div style={{height : '106px' }}>
+                <marquee behavior="left" direction="rigth">color in look</marquee>
+            </div>
+
         </>
     );
 }
