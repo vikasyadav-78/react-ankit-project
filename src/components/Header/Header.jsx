@@ -14,9 +14,9 @@ import { HiBars3CenterLeft } from "react-icons/hi2";
 function Header() {
     return (
         <>
-            <header className=' sticky z-50 top-0'>
+            <header className=''>
 
-                <div className="bg-[#262626] shadow-2xl border-b-black border-b-2 text-white px-4 lg:px-6 py-2.5">
+                <div className="sticky z-50 top-0 bg-[#262626] shadow-2xl border-b-black border-b-2 text-white px-4 lg:px-6 py-2.5">
                     <div className='flex justify-between'>
                         <Link to='/' className='flex items-center '>
                             <img className='mr-3 h-8 ' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbLiKm04s5vniZdkRwoDzH3A0PKfSoDk855u69d-l0tdLgporrhfZegU-TWxAwsxLyIRc&usqp=CAU" alt="Logo" />

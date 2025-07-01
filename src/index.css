@@ -1,8 +1,11 @@
 @import "tailwindcss";
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; 
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 
 }
 
- 
- 
+[data-carousel-slide-to][aria-current="true"] {
+  background-color: #dbaf36 !important;
+  /* border: 2px solid #dbaf36 !important; */
+}
