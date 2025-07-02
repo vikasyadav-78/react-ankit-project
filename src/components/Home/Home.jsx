@@ -6,8 +6,7 @@ import { MdCompareArrows, MdOutlineRemoveRedEye } from "react-icons/md";
 
 
 
-
-
+ 
 function Home() {
     return (
         <>
@@ -112,33 +111,32 @@ function Home() {
             </div>
 
 
-            <div className='overflow-auto overflow-y-hidden'>
+            <div className='overflow-auto overflow-y-hidden whitespace-nowrap scrollbar-hide mb-50'>
                 <div className='flex justify-center'>
-                    <div className='group relative w-[260px] bg-white rounded-lg p-4'> 
-                        <div className='relative overflow-hidden rounded-lg w-full h-[260px]'>
-                            <img className='rounded-lg w-full' src="https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/product_33-360x360.jpg" alt="earings" /> 
-
-                            <div className='absolute top-1/2 right-[-60px] -translate-y-1/2 flex flex-col gap-3 opacity-0 group-hover:right-3 group-hover:opacity-100 transition-all duration-500 ease-in-out'>
-                                <p className='text-white bg-black/60 p-2 rounded-full hover:bg-[#dbaf36] cursor-pointer'><FaHeart /></p>
-                                <p className='text-white bg-black/60 p-2 rounded-full hover:bg-[#dbaf36] cursor-pointer'><MdCompareArrows /></p>
-                                <p className='text-white bg-black/60 p-2 rounded-full hover:bg-[#dbaf36] cursor-pointer'><MdOutlineRemoveRedEye /></p>
+                    {Array.from({ length: 9 }).map((_, index) => 
+                        <div key={index} className='group relative w-[260px] bg-white  p-5'>
+                            <div className='relative overflow-hidden rounded-lg w-full h-[260px]'>
+                                <img className='rounded-2xl w-full' src="https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/product_33-360x360.jpg" alt="earings" />
+                                <div className='absolute top-1/3 right-[-60px] -translate-y-1/2 flex flex-col gap-3 opacity-0 group-hover:right-3 group-hover:opacity-100 transition-all duration-500 ease-in-out'>
+                                    <p className='text-white bg-black/60 p-2 rounded-lg hover:bg-[#dbaf36] cursor-pointer'><FaHeart /></p>
+                                    <p className='text-white bg-black/60 p-2 rounded-lg hover:bg-[#dbaf36] cursor-pointer'><MdCompareArrows /></p>
+                                    <p className='text-white bg-black/60 p-2 rounded-lg hover:bg-[#dbaf36] cursor-pointer'><MdOutlineRemoveRedEye /></p>
+                                </div>
+                            </div>
+                            <div className='text-center mt-4'>
+                                <p className='text-sm text-gray-400 font-semibold'>ACCESSORIES, PEARLES</p>
+                                <p className=' font-semibold mt-1'>Faded Grandeur Stud Earrings</p>
+                                <p className='mt-1 text-yellow-500 text-sm'>⭐⭐⭐⭐⭐ (5 Reviews)</p>
+                                <p className='font-bold text-lg mt-2 text-black group-hover:opacity-0 transition-opacity duration-300'>509.22$</p>
+                            </div>
+                            <div className='absolute left-1/2 bottom-[-50px] transform -translate-x-1/2 opacity-0 group-hover:bottom-1 group-hover:opacity-100 transition-all duration-500 ease-in-out'>
+                                <button className='bg-white text-black px-5 py-2 rounded-lg border hover:bg-[#dbaf36] transition-all duration-300v hover:border-0'> Add to Cart </button>
                             </div>
                         </div>
- 
-                        <div className='text-center mt-4'>
-                            <p className='text-sm text-gray-400 font-semibold'>ACCESSORIES, PEARLES</p>
-                            <p className='text-lg font-semibold mt-1'>Faded Grandeur Stud Earrings</p>
-                            <p className='mt-1 text-yellow-500 text-sm'>⭐⭐⭐⭐⭐ (5 Reviews)</p>
-                            <p className='font-bold text-lg mt-2 text-black group-hover:opacity-0 transition-opacity duration-300'>509.22$</p>
-                        </div> 
-                        <div className='absolute left-1/2 bottom-[-50px] transform -translate-x-1/2 opacity-0 group-hover:bottom-1 group-hover:opacity-100 transition-all duration-500 ease-in-out'>
-                            <button className='bg-white text-black px-5 py-2 rounded-lg border hover:bg-[#dbaf36] transition-all duration-300v hover:border-0'>
-                                Add to Cart
-                            </button>
-                        </div>
-                    </div>
+                    )}
                 </div>
             </div>
+
 
 
         </>
