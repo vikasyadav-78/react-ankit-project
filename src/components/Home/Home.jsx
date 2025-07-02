@@ -1,5 +1,12 @@
 import React from 'react';
 import Header from '../Header/Header';
+import { GrDiamond } from "react-icons/gr";
+import { FaHeart } from "react-icons/fa";
+import { MdCompareArrows, MdOutlineRemoveRedEye } from "react-icons/md";
+
+
+
+
 
 function Home() {
     return (
@@ -52,8 +59,8 @@ function Home() {
             </div>
 
             <div className='grid grid-cols-2 overflow-hidden'>
-                <div className='bg-cover bg-[50%] z-10 bg-no-repeat transform duration-700 ease-in-out hover:scale-[1.09] h-auto w-auto bg-[url(https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/h1_bn-1.jpg)]'  style={{padding : "60px 30px"}}>
-                    <div style={{height : '450px' , width : '450px'}}>
+                <div className='bg-cover bg-[50%] z-10 bg-no-repeat transform duration-700 ease-in-out hover:scale-[1.09] h-auto w-auto bg-[url(https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/h1_bn-1.jpg)]' style={{ padding: "60px 30px" }}>
+                    <div style={{ height: '450px', width: '450px' }}>
                         <p>OUR EARRINGS</p>
                         <p className='text-3xl font-semibold w-50'>Add These To Your style Roster.</p>
                         <p className='opacity-60 mt-3 w-[50%]'>Grab the deal right now! you can get extra 15% off this season.</p>
@@ -61,8 +68,8 @@ function Home() {
                     </div>
                 </div>
 
-                <div className='bg-cover bg-[50%] z-10 bg-no-repeat transform duration-700 ease-in-out hover:scale-[1.09] h-auto w-auto bg-[url(https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/h1_bn-2.jpg)]' style={{padding : "60px 30px"}}>
-                    <div style={{height : '450px' , width : '450px'}}>
+                <div className='bg-cover bg-[50%] z-10 bg-no-repeat transform duration-700 ease-in-out hover:scale-[1.09] h-auto w-auto bg-[url(https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/h1_bn-2.jpg)]' style={{ padding: "60px 30px" }}>
+                    <div style={{ height: '450px', width: '450px' }}>
                         <p>FAVORITE ITEMS</p>
                         <p className='text-3xl font-semibold w-50'>Unique Engagement Rings</p>
                         <p className='opacity-60 mt-3 w-[45%]'>From special antique diamonds to
@@ -72,9 +79,67 @@ function Home() {
                 </div>
             </div>
 
-            <div style={{height : '106px' }}>
+            <div style={{ height: '106px' }}>
                 <marquee behavior="left" direction="rigth">color in look</marquee>
             </div>
+
+
+            <div className='overflow-hidden'>
+                <div className='bg-no-repeat bg-center bg-cover p-5 h-screen w-full bg-[url(https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/h1_bg-2.jpg)] flex justify-center items-center transform duration-700 ease-in-out hover:scale-[1.09]'>
+                    <div>
+                        <div className='mt-10 text-center'>
+                            <p className='text-[#dbaf36] text-5xl flex justify-center'><GrDiamond /></p>
+                        </div>
+                        <div className='text-center'>
+                            <p className='mt-6 text-3xl font-semibold capitalize w-90 mx-auto'>Jewellery from the world’s finest designers</p>
+                            <p className='mt-5 max-w-[600px] mx-auto'>
+                                We believe in the power of jewelry — to tell a story, celebrate a moment, create or continue a tradition. There’s a wonder in wearing something made from the earth. Each Olight piece is crafted with ethically sourced precious metals to reflect our commitment to human rights and environmental sustainability.
+                            </p>
+                            <button className='font-bold border-b mt-5 cursor-pointer transform duration-700 ease-in-out hover:text-[#dbaf36]'>More About Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className='flex justify-center items-center text-center mt-10'>
+                <div>
+                    <p className='font-semibold text-4xl'>Our Best Sellers</p>
+                    <p className='mt-2 opacity-75 mx-auto'>
+                        Our jewelry is made by the finest artists and carefully selected to reflect your style and personality
+                    </p>
+                </div>
+            </div>
+
+
+            <div className='overflow-auto overflow-y-hidden'>
+                <div className='flex justify-center'>
+                    <div className='group relative w-[260px] bg-white rounded-lg p-4'> 
+                        <div className='relative overflow-hidden rounded-lg w-full h-[260px]'>
+                            <img className='rounded-lg w-full' src="https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/product_33-360x360.jpg" alt="earings" /> 
+
+                            <div className='absolute top-1/2 right-[-60px] -translate-y-1/2 flex flex-col gap-3 opacity-0 group-hover:right-3 group-hover:opacity-100 transition-all duration-500 ease-in-out'>
+                                <p className='text-white bg-black/60 p-2 rounded-full hover:bg-[#dbaf36] cursor-pointer'><FaHeart /></p>
+                                <p className='text-white bg-black/60 p-2 rounded-full hover:bg-[#dbaf36] cursor-pointer'><MdCompareArrows /></p>
+                                <p className='text-white bg-black/60 p-2 rounded-full hover:bg-[#dbaf36] cursor-pointer'><MdOutlineRemoveRedEye /></p>
+                            </div>
+                        </div>
+ 
+                        <div className='text-center mt-4'>
+                            <p className='text-sm text-gray-400 font-semibold'>ACCESSORIES, PEARLES</p>
+                            <p className='text-lg font-semibold mt-1'>Faded Grandeur Stud Earrings</p>
+                            <p className='mt-1 text-yellow-500 text-sm'>⭐⭐⭐⭐⭐ (5 Reviews)</p>
+                            <p className='font-bold text-lg mt-2 text-black group-hover:opacity-0 transition-opacity duration-300'>509.22$</p>
+                        </div> 
+                        <div className='absolute left-1/2 bottom-[-50px] transform -translate-x-1/2 opacity-0 group-hover:bottom-1 group-hover:opacity-100 transition-all duration-500 ease-in-out'>
+                            <button className='bg-white text-black px-5 py-2 rounded-lg border hover:bg-[#dbaf36] transition-all duration-300v hover:border-0'>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </>
     );
