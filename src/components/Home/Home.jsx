@@ -6,7 +6,7 @@ import { MdCompareArrows, MdOutlineRemoveRedEye } from "react-icons/md";
 
 
 
- 
+
 function Home() {
     return (
         <>
@@ -111,9 +111,9 @@ function Home() {
             </div>
 
 
-            <div className='overflow-auto overflow-y-hidden whitespace-nowrap scrollbar-hide mb-50'>
+            <div className='overflow-auto no-scrollbar overflow-y-hidden whitespace-nowrap scrollbar-hide mb-50'>
                 <div className='flex justify-center'>
-                    {Array.from({ length: 9 }).map((_, index) => 
+                    {Array.from({ length: 9 }).map((_, index) =>
                         <div key={index} className='group relative w-[260px] bg-white  p-5'>
                             <div className='relative overflow-hidden rounded-lg w-full h-[260px]'>
                                 <img className='rounded-2xl w-full' src="https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/product_33-360x360.jpg" alt="earings" />
@@ -137,6 +137,85 @@ function Home() {
                 </div>
             </div>
 
+
+            <div className="flex relative h-screen overflow-hidden">
+                <div className="group relative h-[420px] overflow-hidden">
+                    <div className="absolute inset-0 bg-[url('https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/banner_1.jpg')] bg-cover bg-center bg-no-repeat transition-all duration-700 ease-in-out group-hover:scale-105" />
+                    <div className="relative z-10 flex h-full w-full items-center justify-center p-5 text-white">
+                        <div className="text-center">
+                            <img src="https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/triangle.svg" alt="triangle" className="mx-auto mb-4 opacity-50" />
+
+                            <p className="text-xl font-semibold md:text-2xl">One-Of-A-Kinds</p>
+
+                            <p className="mt-2 font-semibold transition-all duration-500 ease-in-out group-hover:-translate-y-4 group-hover:opacity-0">RINGS</p>
+
+                            <div className="mt-2 max-w-md translate-y-10 opacity-0 transition-all duration-700 ease-in-out group-hover:translate-y-0 group-hover:opacity-100">
+                                <p className="font-semibold w-70 mx-auto"> Featuring unique and hand-sourced gemstones from all over the world.</p>
+
+                                <button className="mt-3 mb-5 border-b font-bold text-white transition-colors duration-300 hover:text-[#dbaf36] hover:border-[#dbaf36]">See More Products </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="group relative h-[420px] overflow-hidden">
+                    <div className="absolute inset-0 bg-[url('https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/banner_2.jpg')] bg-cover bg-center bg-no-repeat transition-all duration-700 ease-in-out group-hover:scale-105" />
+                    <div className="relative z-10 flex h-full w-full items-center justify-center p-5 text-white">
+                        <div className="text-center">
+                            <img src="https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/triangle-1.svg" alt="triangle" className="mx-auto mt-70 opacity-50" />
+
+                            <p className="text-xl font-semibold md:text-2xl mt-[-20]">One-Of-A-Kinds</p>
+
+                            <p className="mt-2 font-semibold transition-all duration-500 ease-in-out group-hover:-translate-y-4 group-hover:opacity-0">RINGS</p>
+
+                            <div className="mt-2 max-w-md translate-y-10 opacity-0 transition-all duration-700 ease-in-out group-hover:translate-y-0 group-hover:opacity-100">
+                                <p className="font-semibold w-70 mx-auto"> Featuring unique and hand-sourced gemstones from all over the world.</p>
+
+                                <button className="mt-3 mb-5 border-b font-bold text-white transition-colors duration-300 hover:text-[#dbaf36] hover:border-[#dbaf36]">See More Products </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="group relative h-[420px] overflow-hidden">
+                    <div className="absolute inset-0 bg-[url('https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/banner_1.jpg')] bg-cover bg-center bg-no-repeat transition-all duration-700 ease-in-out group-hover:scale-105" />
+                    <div className="relative z-10 flex h-full w-full items-center justify-center p-5 text-white">
+                        <div className="text-center">
+                            <img src="https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/triangle.svg" alt="triangle" className="mx-auto mb-4" />
+
+                            <p className="text-xl font-semibold md:text-2xl">One-Of-A-Kinds</p>
+
+                            <p className="mt-2 font-semibold transition-all duration-500 ease-in-out group-hover:-translate-y-4 group-hover:opacity-0">RINGS</p>
+
+                            <div className="mt-2 max-w-md translate-y-10 opacity-0 transition-all duration-700 ease-in-out group-hover:translate-y-0 group-hover:opacity-100">
+                                <p className="font-semibold w-70 mx-auto"> Featuring unique and hand-sourced gemstones from all over the world.</p>
+
+                                <button className="mt-3 mb-5 border-b font-bold text-white transition-colors duration-300 hover:text-[#dbaf36] hover:border-[#dbaf36]">See More Products </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="group relative h-[420px] overflow-hidden">
+                    <div className="absolute inset-0 bg-[url('https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/banner_1.jpg')] bg-cover bg-center bg-no-repeat transition-all duration-700 ease-in-out group-hover:scale-105" />
+                    <div className="relative z-10 flex h-full w-full items-center justify-center p-5 text-white">
+                        <div className="text-center">
+                            <img src="https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/triangle.svg" alt="triangle" className="mx-auto mb-4" />
+
+                            <p className="text-xl font-semibold md:text-2xl">One-Of-A-Kinds</p>
+
+                            <p className="mt-2 font-semibold transition-all duration-500 ease-in-out group-hover:-translate-y-4 group-hover:opacity-0">RINGS</p>
+
+                            <div className="mt-2 max-w-md translate-y-10 opacity-0 transition-all duration-700 ease-in-out group-hover:translate-y-0 group-hover:opacity-100">
+                                <p className="font-semibold w-70 mx-auto"> Featuring unique and hand-sourced gemstones from all over the world.</p>
+
+                                <button className="mt-3 mb-5 border-b font-bold text-white transition-colors duration-300 hover:text-[#dbaf36] hover:border-[#dbaf36]">See More Products </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div className='mt-40'></div>
 
 
         </>

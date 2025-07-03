@@ -13,3 +13,6 @@
   background-color: #dbaf36 !important;
   /* border: 2px solid #dbaf36 !important; */
 }
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
