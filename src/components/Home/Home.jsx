@@ -56,27 +56,29 @@ function Home() {
                     <button type="button" class="w-3 h-3 rounded-full cursor-pointer" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
                 </div>
             </div>
-
-            <div className='grid grid-cols-2 overflow-hidden'>
-                <div className='bg-cover bg-[50%] z-10 bg-no-repeat transform duration-700 ease-in-out hover:scale-[1.09] h-auto w-auto bg-[url(https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/h1_bn-1.jpg)]' style={{ padding: "60px 30px" }}>
-                    <div style={{ height: '450px', width: '450px' }}>
+            <div className='grid grid-cols-2 overflow-hidden h-[50%]'>
+                <div className='p-8 z-10 bg-no-repeat group h-auto w-auto transform transition-transform duration-700 ease-in-out hover:scale-[1.05] bg-cover bg-[50%] bg-[url(https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/h1_bn-1.jpg)]' style={{ padding: "60px 30px" }}>
+                    <div className='transition-transform duration-500 group-hover:translate-x-4 will-change-transform' style={{ height: '450px', width: '450px' }}>
                         <p>OUR EARRINGS</p>
-                        <p className='text-3xl font-semibold w-50'>Add These To Your style Roster.</p>
+                        <p className='text-4xl font-semibold w-50'>Add These To Your style Roster.</p>
                         <p className='opacity-60 mt-3 w-[50%]'>Grab the deal right now! you can get extra 15% off this season.</p>
-                        <button className='font-semibold mt-3 bg-white px-3 py-2 rounded-lg cursor-pointer transform duration-500 hover:bg-[#dbaf36]'>Shop Now</button>
+                        <button className='font-semibold mt-3 bg-white px-3 py-2 rounded-lg cursor-pointer transition-colors duration-500 hover:bg-[#dbaf36]'>Shop Now</button>
                     </div>
                 </div>
-
-                <div className='bg-cover bg-[50%] z-10 bg-no-repeat transform duration-700 ease-in-out hover:scale-[1.09] h-auto w-auto bg-[url(https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/h1_bn-2.jpg)]' style={{ padding: "60px 30px" }}>
-                    <div style={{ height: '450px', width: '450px' }}>
-                        <p>FAVORITE ITEMS</p>
-                        <p className='text-3xl font-semibold w-50'>Unique Engagement Rings</p>
-                        <p className='opacity-60 mt-3 w-[45%]'>From special antique diamonds to
-                            one of-a-kind colored gemstones</p>
-                        <button className='font-semibold mt-3 bg-white px-3 py-2 rounded-lg cursor-pointer transform duration-500 hover:bg-[#dbaf36]'>Shop Now</button>
+                <div className='overflow-hidden'>
+                    <div className='p-8 z-10 bg-no-repeat group h-auto w-auto transform transition-transform duration-700 ease-in-out hover:scale-[1.05] bg-cover bg-[50%] bg-[url(https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/h1_bn-4.jpg)]' style={{ padding: "60px 30px" }}>
+                        <div className='transition-transform duration-500 group-hover:translate-x-4 will-change-transform' style={{ height: '450px', width: '450px' }}>
+                            <p>FAVORITE ITEMS</p>
+                            <p className='text-3xl font-semibold w-50'>Unique Engagement Rings</p>
+                            <p className='opacity-60 mt-3 w-[45%]'>From special antique diamonds to
+                                one of-a-kind colored gemstones</p>
+                            <button className='font-semibold mt-3 bg-white px-3 py-2 rounded-lg cursor-pointer transition-colors duration-500 hover:bg-[#dbaf36]'>Shop Now</button>
+                        </div>
                     </div>
                 </div>
             </div>
+
+
 
             <div style={{ height: '106px' }}>
                 <marquee behavior="left" direction="rigth">color in look</marquee>
@@ -212,11 +214,122 @@ function Home() {
                     </div>
                 </div>
             </div>
- 
-                
-                <div className='mt-50'>
 
+
+
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 gap-5 -mt-25'>
+                <div className='flex gap-3 hover:-translate-y-3 transition-transform duration-600'>
+                    <p className='text-4xl'><i className="fa-solid fa-rotate-left"></i></p>
+                    <div>
+                        <p className='text-xl'>Complimentary Shipping</p>
+                        <p className='w-50 mt-3'>We offer complimentary shipping and returns on all orders over $130.</p>
+                    </div>
                 </div>
+                <div className='flex gap-3 hover:-translate-y-3 transition-transform duration-600'>
+                    <p className='text-4xl'><i className="fa-solid fa-rotate-left"></i></p>
+                    <div>
+                        <p className='text-xl'>Complimentary Shipping</p>
+                        <p className='w-50 mt-3'>We offer complimentary shipping and returns on all orders over $130.</p>
+                    </div>
+                </div>
+                <div className='flex gap-3 hover:-translate-y-3 transition-transform duration-600'>
+                    <p className='text-4xl'><i className="fa-solid fa-rotate-left"></i></p>
+                    <div>
+                        <p className='text-xl'>Complimentary Shipping</p>
+                        <p className='w-50 mt-3'>We offer complimentary shipping and returns on all orders over $130.</p>
+                    </div>
+                </div>
+                <div className='flex gap-3 hover:-translate-y-3 transition-transform duration-600'>
+                    <p className='text-4xl'><i className="fa-solid fa-rotate-left"></i></p>
+                    <div>
+                        <p className='text-xl'>Complimentary Shipping</p>
+                        <p className='w-50 mt-3'>We offer complimentary shipping and returns on all orders over $130.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div className='p-5 mt-20 opacity-25'>
+                <hr />
+            </div>
+
+
+            <div className='text-center mt-10'>
+                <p className='font-semibold text-3xl'>Trend Products of The Week</p>
+                <p>Our jewelry is made by the finest artists and carefully selected to reflect your style and personality</p>
+            </div>
+
+            <div className='overflow-auto mt-5 no-scrollbar overflow-y-hidden whitespace-nowrap scrollbar-hide mb-15'>
+                <div className='flex justify-center'>
+                    {Array.from({ length: 9 }).map((_, index) =>
+                        <div key={index} className='group relative w-[260px] bg-white  p-5'>
+                            <div className='relative overflow-hidden rounded-lg w-full h-[260px]'>
+                                <img className='rounded-2xl w-full' src="https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/product_33-360x360.jpg" alt="earings" />
+                                <div className='absolute top-1/3 right-[-60px] -translate-y-1/2 flex flex-col gap-3 opacity-0 group-hover:right-3 group-hover:opacity-100 transition-all duration-500 ease-in-out'>
+                                    <p className='text-white bg-black/60 p-2 rounded-lg hover:bg-[#dbaf36] cursor-pointer'><FaHeart /></p>
+                                    <p className='text-white bg-black/60 p-2 rounded-lg hover:bg-[#dbaf36] cursor-pointer'><MdCompareArrows /></p>
+                                    <p className='text-white bg-black/60 p-2 rounded-lg hover:bg-[#dbaf36] cursor-pointer'><MdOutlineRemoveRedEye /></p>
+                                </div>
+                            </div>
+                            <div className='text-center mt-4'>
+                                <p className='text-sm text-gray-400 font-semibold'>ACCESSORIES, PEARLES</p>
+                                <p className=' font-semibold mt-1'>Faded Grandeur Stud Earrings</p>
+                                <p className='mt-1 text-yellow-500 text-sm'>⭐⭐⭐⭐⭐ (5 Reviews)</p>
+                                <p className='font-bold text-lg mt-2 text-black group-hover:opacity-0 transition-opacity duration-300'>509.22$</p>
+                            </div>
+                            <div className='absolute left-1/2 bottom-[-50px] transform -translate-x-1/2 opacity-0 group-hover:bottom-1 group-hover:opacity-100 transition-all duration-500 ease-in-out'>
+                                <button className='bg-white text-black px-5 py-2 rounded-lg border hover:bg-[#dbaf36] transition-all duration-300v hover:border-0'> Add to Cart </button>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            </div>
+
+
+            <div className='grid grid-cols-2 overflow-hidden mt-15 h-[50%]'>
+                <div className='p-8 z-10 bg-no-repeat group h-auto w-auto transform transition-transform duration-700 ease-in-out hover:scale-[1.05] bg-cover bg-[50%] bg-[url(https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/h1_bn-3.jpg)]' style={{ padding: "60px 30px" }}>
+                    <div className='transition-transform duration-500 group-hover:translate-x-4 will-change-transform' style={{ height: 'auto', width: '450px' }}>
+                        <p>LUXURY NECKLACE</p>
+                        <p className='text-4xl font-semibold w-50'>Best Friend Jewelry</p>
+                        <p className='opacity-60 mt-2 w-[50%]'>A wide range of exquisite earrings</p>
+                        <button className='font-semibold mt-3 bg-white px-3 py-2 rounded-lg cursor-pointer transition-colors duration-500 hover:bg-[#dbaf36]'>Shop Now</button>
+                    </div>
+                </div>
+                <div className='overflow-hidden'>
+                    <div className='p-8 z-10 bg-no-repeat group h-auto w-auto transform transition-transform duration-700 ease-in-out hover:scale-[1.05] bg-cover bg-[50%] bg-[url(https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/h1_bn-4.jpg)]' style={{ padding: "60px 30px" }}>
+                        <div className='transition-transform duration-500 group-hover:translate-x-4 will-change-transform' style={{ height: 'auto', width: '450px' }}>
+                            <p>OUR EARRINGS</p>
+                            <p className='text-3xl font-semibold w-50'>Diamond Stud Earrings</p>
+                            <p className='opacity-60 mt-4 w-[45%]'>A wide range of exquisite earrings</p>
+                            <button className='font-semibold mt-3 bg-white px-3 py-2 rounded-lg cursor-pointer transition-colors duration-500 hover:bg-[#dbaf36]'>Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='mt-5'>
+                <marquee behavior="right" direction="right">Last</marquee>
+            </div>
+
+
+            <div className='overflow-hidden'>
+                <div className='p-8 z-10 bg-no-repeat group h-auto w-auto transform transition-transform duration-700 ease-in-out hover:scale-[1.05] bg-cover bg-[50%] bg-[url(https://demo2.wpopal.com/olight/wp-content/uploads/2025/04/h1_bn-5.jpg)]' style={{ padding: "60px 30px" }}>
+                    <div className='transition-transform duration-500 group-hover:translate-x-4 will-change-transform flex justify-end items-center'>
+                        <div>
+                            <p>LUXURY NECKLACE</p>
+                            <p className='text-4xl font-semibold w-50'>Best Friend Jewelry</p>
+                            <p className='opacity-60 mt-2 w-[50%]'>A wide range of exquisite earrings</p>
+                            <button className='font-semibold mt-3 bg-white px-3 py-2 rounded-lg cursor-pointer transition-colors duration-500 hover:bg-[#dbaf36]'>Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div className='mt-50'>
+
+            </div>
 
         </>
     );
